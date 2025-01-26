@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding for proper text rendering -->
+  <meta charset="UTF-8">
+
+  <!-- Ensures responsiveness on different screen sizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title of the webpage shown in the browser tab -->
+  <title>about</title>
+
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <!-- Background video for visual appeal -->
+    <video class="vidhead" loop muted autoplay src="../images/falling_coffe.mp4"></video>
+
+    <!-- Empty navbar for styling via CSS -->
+    <div class="navbar"></div>
+
+    <!-- Navigation menu with links to different pages -->
+    <nav>
+      <img class="logo1" src="../images/coffe_logo.webp" alt="logo">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../views/productos.html">GALLERY</a></li>
+        <li><a href="../views/presupuesto.html">ABOUT</a></li>
+        <li><a href="../views/contacto.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Registration section -->
+  <div class="kontainer">
+    <h5 class="title1">
+      "Register now to become part of our membership and stay updated on our exclusive offers and weekly discounts!
+      Don't miss out on special deals exclusively for our members. Sign up now!"
+    </h5>
+    <br>
+
+    <!-- Registration form title -->
+    <div class="title">Registration</div>
+
+    <!-- Registration form starts -->
+    <form action="#">
+      
+      <!-- Name input field -->
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Christian Born" 
+         name="name" pattern="^[A-Za-z\s]+$" required>
+      </div><br>
+
+      <!-- Email input field -->
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="bornchrist@gmail.com" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+      </div>
+      <br>
+
+      <!-- Password input field -->
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" pattern=".{6,}" title="At least 6 characters" required>
+
+      </div>
+      <br>
+
+      <!-- Confirm Password input field -->
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="password" name="password" pattern=".{6,}" title="At least 6 characters" required>
+      </div>
+      <br>
+
+      <!-- Phone Number input field -->
+      <div class="form-group">
+        <label for="Phone Number">Phone Number</label>
+        <input type="text" id="phone" placeholder="123456789" name="phone" pattern="[0-9]{9,10}" title="Enter 10-11 digits only" required>
+      </div>
+      <br>
+
+      <!-- Gender selection using radio buttons -->
+      <div class="gender details">
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+      </div>
+      <br>
+
+      <!-- Privacy policy agreement checkbox -->
+      <input type="checkbox" id="agree" name="agree" required>
+      <label for="agree">
+        I confirm that I have read and agree to the 
+        <a href="privacy-policy.html" target="_blank" style="color: blue;">Privacy Policy</a>.
+      </label>
+      <br><br>
+
+      <!-- Submit and Reset buttons -->
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <br>
+      
+    </form>
+    <!-- End of registration form -->
+  </div>
+</body>
+</html>
